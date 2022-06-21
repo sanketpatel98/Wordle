@@ -483,10 +483,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="8hn-M2-RvC">
-                                                <rect key="frame" x="57.5" y="110" width="299" height="50"/>
+                                                <rect key="frame" x="13.5" y="110" width="387" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvL-vH-1Gp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="36.5" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="50"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Z"/>
                                                         <connections>
@@ -494,7 +494,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZH-QG-gne">
-                                                        <rect key="frame" x="37.5" y="0.0" width="36.5" height="50"/>
+                                                        <rect key="frame" x="48.5" y="0.0" width="47.5" height="50"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="X"/>
                                                         <connections>
@@ -502,7 +502,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghu-bG-Zse">
-                                                        <rect key="frame" x="75" y="0.0" width="36.5" height="50"/>
+                                                        <rect key="frame" x="97" y="0.0" width="47.5" height="50"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="C"/>
                                                         <connections>
@@ -510,7 +510,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KM-bu-6zV">
-                                                        <rect key="frame" x="112.5" y="0.0" width="36.5" height="50"/>
+                                                        <rect key="frame" x="145.5" y="0.0" width="47.5" height="50"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="V"/>
                                                         <connections>
@@ -518,7 +518,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bI-jA-5GZ">
-                                                        <rect key="frame" x="150" y="0.0" width="36.5" height="50"/>
+                                                        <rect key="frame" x="194" y="0.0" width="47.5" height="50"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="B"/>
                                                         <connections>
@@ -526,7 +526,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whc-1v-5Yb">
-                                                        <rect key="frame" x="187.5" y="0.0" width="36.5" height="50"/>
+                                                        <rect key="frame" x="242.5" y="0.0" width="47.5" height="50"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="N"/>
                                                         <connections>
@@ -534,7 +534,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfD-kp-UrA">
-                                                        <rect key="frame" x="225" y="0.0" width="36.5" height="50"/>
+                                                        <rect key="frame" x="291" y="0.0" width="47.5" height="50"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="M"/>
                                                         <connections>
@@ -542,10 +542,10 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZ6-Mg-p3i">
-                                                        <rect key="frame" x="262.5" y="0.0" width="36.5" height="50"/>
+                                                        <rect key="frame" x="339.5" y="0.0" width="47.5" height="50"/>
                                                         <color key="tintColor" red="0.69599710049999997" green="0.050831334309999997" blue="0.28261932340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="&lt;"/>
+                                                        <buttonConfiguration key="configuration" style="filled" image="delete.left" catalog="system"/>
                                                         <connections>
                                                             <action selector="onCleareButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fgl-Zy-aWN"/>
                                                         </connections>
@@ -582,8 +582,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="clearButton" destination="aZ6-Mg-p3i" id="ijE-ni-jN4"/>
                         <outlet property="firstRowUIStackView" destination="LQj-Cd-69J" id="cFj-eC-R1C"/>
                         <outlet property="inputTextHorizontalStackView" destination="hGU-jt-N6M" id="Fdq-f9-v57"/>
+                        <outlet property="qButton" destination="7ob-FJ-92U" id="J94-5u-4gT"/>
                         <outlet property="qwertyBoardStackView" destination="hGU-jt-N6M" id="zfC-aJ-DEe"/>
                         <outlet property="submitWordButton" destination="fVS-uX-O2v" id="aoi-Z5-YDn"/>
                         <outlet property="wordusUILabel" destination="YyT-0g-5wg" id="eTM-fo-KqR"/>
@@ -617,6 +619,32 @@
                         <outletCollection property="formLabels" destination="WEz-Cx-dpD" collectionClass="NSMutableArray" id="4ey-f3-cz1"/>
                         <outletCollection property="formLabels" destination="vfp-ic-wPo" collectionClass="NSMutableArray" id="gxZ-Zx-qJi"/>
                         <outletCollection property="formLabels" destination="MEW-JQ-gZV" collectionClass="NSMutableArray" id="VVl-TD-YPW"/>
+                        <outletCollection property="keyBoardKeys" destination="7ob-FJ-92U" collectionClass="NSMutableArray" id="Ynx-wC-W8g"/>
+                        <outletCollection property="keyBoardKeys" destination="ZUP-gm-cjR" collectionClass="NSMutableArray" id="cs6-LC-cy3"/>
+                        <outletCollection property="keyBoardKeys" destination="AA9-74-NlV" collectionClass="NSMutableArray" id="pbl-oV-lgh"/>
+                        <outletCollection property="keyBoardKeys" destination="GcC-ML-Yl4" collectionClass="NSMutableArray" id="Mzg-Hz-Xwp"/>
+                        <outletCollection property="keyBoardKeys" destination="LIe-F1-6Ge" collectionClass="NSMutableArray" id="c6T-RO-jUk"/>
+                        <outletCollection property="keyBoardKeys" destination="CMc-aX-O5I" collectionClass="NSMutableArray" id="gFx-zl-NO3"/>
+                        <outletCollection property="keyBoardKeys" destination="fNP-CH-7at" collectionClass="NSMutableArray" id="2tX-md-YAN"/>
+                        <outletCollection property="keyBoardKeys" destination="zWx-aL-w6B" collectionClass="NSMutableArray" id="heh-rL-ob2"/>
+                        <outletCollection property="keyBoardKeys" destination="Zmz-Y5-GRC" collectionClass="NSMutableArray" id="SFh-Dc-SCa"/>
+                        <outletCollection property="keyBoardKeys" destination="Cpz-1C-x4d" collectionClass="NSMutableArray" id="9Tj-7c-gcg"/>
+                        <outletCollection property="keyBoardKeys" destination="WdD-jZ-fGl" collectionClass="NSMutableArray" id="gxK-EQ-dJj"/>
+                        <outletCollection property="keyBoardKeys" destination="M8m-CG-QeJ" collectionClass="NSMutableArray" id="NtL-6q-pij"/>
+                        <outletCollection property="keyBoardKeys" destination="Hgu-UD-KNz" collectionClass="NSMutableArray" id="BmN-u2-Fus"/>
+                        <outletCollection property="keyBoardKeys" destination="Mvs-n6-p5S" collectionClass="NSMutableArray" id="rve-mi-jOo"/>
+                        <outletCollection property="keyBoardKeys" destination="HXw-E4-bNa" collectionClass="NSMutableArray" id="ATu-lb-iqJ"/>
+                        <outletCollection property="keyBoardKeys" destination="ZrX-Fy-xHK" collectionClass="NSMutableArray" id="Y1T-8r-wif"/>
+                        <outletCollection property="keyBoardKeys" destination="Wc6-e5-by7" collectionClass="NSMutableArray" id="dTK-bP-2cI"/>
+                        <outletCollection property="keyBoardKeys" destination="Mpa-eF-mTC" collectionClass="NSMutableArray" id="YsU-2T-eLW"/>
+                        <outletCollection property="keyBoardKeys" destination="sAd-zw-Ayt" collectionClass="NSMutableArray" id="oT2-xR-cMi"/>
+                        <outletCollection property="keyBoardKeys" destination="LvL-vH-1Gp" collectionClass="NSMutableArray" id="Niw-SF-6Lw"/>
+                        <outletCollection property="keyBoardKeys" destination="lZH-QG-gne" collectionClass="NSMutableArray" id="JFQ-8x-7qO"/>
+                        <outletCollection property="keyBoardKeys" destination="Ghu-bG-Zse" collectionClass="NSMutableArray" id="6gK-Bx-c9a"/>
+                        <outletCollection property="keyBoardKeys" destination="8KM-bu-6zV" collectionClass="NSMutableArray" id="ygN-k4-bpR"/>
+                        <outletCollection property="keyBoardKeys" destination="9bI-jA-5GZ" collectionClass="NSMutableArray" id="wjV-be-teB"/>
+                        <outletCollection property="keyBoardKeys" destination="Whc-1v-5Yb" collectionClass="NSMutableArray" id="Eg9-0F-SHl"/>
+                        <outletCollection property="keyBoardKeys" destination="wfD-kp-UrA" collectionClass="NSMutableArray" id="qcV-WX-Obz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -625,6 +653,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="delete.left" catalog="system" width="128" height="104"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
