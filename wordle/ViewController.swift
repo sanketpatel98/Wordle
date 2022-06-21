@@ -38,12 +38,13 @@ class ViewController: UIViewController {
     
     @IBAction func qwertyPressed(_ sender: UIButton) {
         print("================================================================")
-        print("FirstLine letterCounter: \(letterCounter)")
+        print("FirstLine letterCounter: \(letterCounter) flag is:\(flag)")
         if letterCounter % 5 != 0 || letterCounter == 0{
             if !flag {
                 letterCounter = letterCounter - 1
                 flag = true
             }
+            print("Letter counter Here!!\(letterCounter)")
             formLabels[letterCounter].text = sender.titleLabel?.text
             guessedWord.append(sender.titleLabel?.text ?? "")
             if flag {
@@ -122,6 +123,7 @@ class ViewController: UIViewController {
         }
         guessedWord = ""
         guessCounter = guessCounter + 1
+        flag = false
         if guessCounter == 6 {
             let alert = UIAlertController(title: "Ohh NO!", message: "you are looser! The Word is \(word)", preferredStyle: .alert)
             
@@ -133,9 +135,9 @@ class ViewController: UIViewController {
             self.show(alert, sender: nil)
             setNewWord()
             guessCounter = 0
+            flag = true
 //            letterCounter = 0
         }
-        flag = false
         print("letter counter before enabling nextCell:========\(letterCounter)")
         enableNextCell(index: letterCounter - 1)
         return false
