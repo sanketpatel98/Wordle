@@ -483,10 +483,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="8hn-M2-RvC">
-                                                <rect key="frame" x="37.5" y="110" width="339" height="50"/>
+                                                <rect key="frame" x="57.5" y="110" width="299" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvL-vH-1Gp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="36.5" height="50"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Z"/>
                                                         <connections>
@@ -494,7 +494,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZH-QG-gne">
-                                                        <rect key="frame" x="42.5" y="0.0" width="41.5" height="50"/>
+                                                        <rect key="frame" x="37.5" y="0.0" width="36.5" height="50"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="X"/>
                                                         <connections>
@@ -502,7 +502,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghu-bG-Zse">
-                                                        <rect key="frame" x="85" y="0.0" width="41.5" height="50"/>
+                                                        <rect key="frame" x="75" y="0.0" width="36.5" height="50"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="C"/>
                                                         <connections>
@@ -510,7 +510,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KM-bu-6zV">
-                                                        <rect key="frame" x="127.5" y="0.0" width="41.5" height="50"/>
+                                                        <rect key="frame" x="112.5" y="0.0" width="36.5" height="50"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="V"/>
                                                         <connections>
@@ -518,7 +518,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bI-jA-5GZ">
-                                                        <rect key="frame" x="170" y="0.0" width="41.5" height="50"/>
+                                                        <rect key="frame" x="150" y="0.0" width="36.5" height="50"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="B"/>
                                                         <connections>
@@ -526,7 +526,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whc-1v-5Yb">
-                                                        <rect key="frame" x="212.5" y="0.0" width="41.5" height="50"/>
+                                                        <rect key="frame" x="187.5" y="0.0" width="36.5" height="50"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="N"/>
                                                         <connections>
@@ -534,7 +534,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfD-kp-UrA">
-                                                        <rect key="frame" x="255" y="0.0" width="41.5" height="50"/>
+                                                        <rect key="frame" x="225" y="0.0" width="36.5" height="50"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="M"/>
                                                         <connections>
@@ -542,9 +542,13 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZ6-Mg-p3i">
-                                                        <rect key="frame" x="297.5" y="0.0" width="41.5" height="50"/>
+                                                        <rect key="frame" x="262.5" y="0.0" width="36.5" height="50"/>
+                                                        <color key="tintColor" red="0.69599710049999997" green="0.050831334309999997" blue="0.28261932340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="&lt;&gt;"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="&lt;"/>
+                                                        <connections>
+                                                            <action selector="onCleareButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fgl-Zy-aWN"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -556,6 +560,9 @@
                                                 <state key="normal" title="Submit word">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onSubmitWord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eRa-MN-luP"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
