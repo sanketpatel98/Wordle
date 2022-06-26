@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var wordsToMatch = ["Abuse", "Adult", "Agent", "Anger", "Award",  "Beach", "Birth", "Block", "Board", "Brain", "Bread", "Break", "Brown", "Buyer", "Cause", "Chain", "Chair", "Chest", "Chief", "Child", "China", "Claim", "Clock", "Coach", "Coast", "Court", "Cover", "Cream", "Crime", "Crowd", "Crown", "Dance", "Death", "Depth", "Doubt", "Draft", "Dream", "Drink", "Drive", "Earth",  "Entry", "Faith", "Fault", "Field", "Fight", "Final", "Focus", "Force", "Frame", "Frank", "Front", "Fruit", "Grant", "Group", "Guide", "Heart", "Henry", "Horse", "Hotel", "House", "Image", "Index", "Input", "Jones", "Judge", "Knife", "Laura", "Layer",  "Lewis", "Light", "Lunch", "Major", "March", "Match", "Metal", "Model", "Money", "Month", "Mouth", "Music", "Night", "Noise", "North", "Novel", "Nurse", "Other", "Owner", "Panel", "Paper", "Party", "Peace", "Phase", "Phone", "Pilot", "Pitch", "Place", "Plane", "Plant", "Plate", "Point", "Pound", "Power", "Price", "Pride", "Prize", "Radio", "Range", "Ratio", "Reply", "Right", "River", "Round", "Route", "Rugby", "Scale", "Scope", "Score", "Shape", "Share", "Shift", "Shirt", "Shock", "Sight", "Simon",  "Smile", "Smith", "Smoke", "Sound", "South", "Space", "Spite", "Sport", "Squad", "Stage", "Steam", "Stock", "Stone", "Store", "Study", "Style", "Sugar", "Table", "Taste", "Theme", "Thing",  "Touch", "Tower", "Track", "Trade", "Train", "Trend", "Trial", "Trust", "Truth", "Uncle", "Union", "Unity", "Value", "Video",  "Voice", "Waste", "Watch", "Water", "While", "White", "Whole", "Woman", "World", "Youth" ]
     var word = ""
     var flag = true
+    var isInDictionary = false
     @IBOutlet weak var firstRowUIStackView: UIStackView!
     @IBOutlet var formLabels: [UILabel]!
     @IBOutlet var keyBoardKeys: [UIButton]!
@@ -79,6 +80,20 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func onSubmitWord(_ sender: UIButton) {
+        for item in wordsToMatch {
+            if guessedWord == item.uppercased() {
+                isInDictionary = true
+                break
+            }
+        }
+
+        if !isInDictionary {
+            let alert = UIAlertController(title: "Ouchh!", message: "This word isn't in my dictionary!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
         checkWord()
     }
     
@@ -125,7 +140,7 @@ class ViewController: UIViewController {
         guessCounter = guessCounter + 1
         flag = false
         if guessCounter == 6 {
-            let alert = UIAlertController(title: "Ohh NO!", message: "you are looser! The Word is \(word)", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Ohh NO!", message: "you were almost there! The Word is \(word)", preferredStyle: .alert)
             
             let okButton = UIAlertAction(title: "Restart Game", style: .default){ [self] _ in
                 clearBoard()
@@ -192,4 +207,3 @@ class ViewController: UIViewController {
         print(word)
     }
 }
-
