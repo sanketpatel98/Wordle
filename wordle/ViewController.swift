@@ -88,7 +88,7 @@ class ViewController: UIViewController {
         }
 
         if !isInDictionary {
-            let alert = UIAlertController(title: "Ouchh!", message: "This word isn't in my dictionary!", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Oops!", message: "This word isn't in my dictionary!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
             NSLog("The \"OK\" alert occured.")
             }))
